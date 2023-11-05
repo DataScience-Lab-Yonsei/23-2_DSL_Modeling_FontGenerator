@@ -19,7 +19,7 @@
 - 이러한 방식으로 source 이미지와 target 이미지를 결합하여 generator의 최종 아웃풋으로는 32by32 이미지를 얻게 됨.
 ## 2. Model
 ![image](https://github.com/younghkim1/23-2_DSL_Modeling_FontGenerator/assets/121621498/aa304b44-70a5-40b5-9931-81b409dd2060)
-- 생성된 이미지는 target font의 스타일을 가진 글자이므로 모델이 잘 학습 되었다면 target font에서 가져온 같은 글자 모양 이미지와 같아야 합니다. 따라서 그 둘 간에 l1 norm의 형태로 generator loss를 정의하였음.
+- 생성된 이미지는 target font의 스타일을 가진 글자이므로 모델이 잘 학습 되었다면 target font에서 가져온 같은 글자 모양 이미지와 같아야 하기 때문에 그 둘 간에 l1 norm의 형태로 generator loss를 정의하였음.
   
 - fake image와 source image는 gan의 분포추론을 이용하기 위해 discriminator를 사용해 discriminator loss를 정의하였음.
 ## 3. Dataset
